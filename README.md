@@ -1,16 +1,17 @@
-Um portfolio moderno que apresenta skills, experiências profissionais e formas de contato.
+# portfolio
 
-## Tecnologias
+Portfolio pessoal moderno que apresenta habilidades, projetos e formas de contato.
+
+## tecnologias
 
 - HTML5
 - CSS3
-- Font Awesome (ícones)
-- Google Fonts (Poppins)
+- Font Awesome
+- Google Fonts
 
-## Arquivos
+## arquivos
 
-portfolio/
-├── index.html    # Estrutura do site
-├── style.css     # Estilos e responsividade
-├── eu.png        # Foto de perfil
-└── README.md     # Este arquivo
+- `index.html`: estrutura do site
+- `style.css`: estilos e responsividade
+- `eu.png`: foto de perfil
+- `README.md`: documentacao do projeto
