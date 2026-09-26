@@ -6,9 +6,14 @@ Portfólio pessoal de Kaue Oliveira, com identidade roxa e efeitos sutis.
 
 - Apresentação: nome, área de atuação, foto, redes e acesso aos projetos.
 - Sobre mim: objetivos profissionais e graduação em Ciência da Computação (4º período, cursando).
-- Projetos: portfólio pessoal em destaque e seis projetos públicos do GitHub,
-  com descrição, tecnologias, funcionalidades e acesso ao código-fonte.
-- Habilidades: linguagens estudadas e aplicadas nos projetos.
+- Projetos: EEVEE em destaque, seguida de OliSnack API e Viral Cuts Bot;
+  os demais projetos continuam disponíveis, com o portfólio ao final.
+- Estudos de caso: páginas estáticas dos três projetos principais, com problema,
+  solução, arquitetura, decisões, limites e possíveis evoluções.
+- Habilidades: frontend, backend, dados/infraestrutura, IA/automação, ferramentas
+  e fundamentos, com links para os projetos em que cada tecnologia é aplicada.
+- Agora: projeto em construção, temas de estudo e oportunidades buscadas.
+- Currículo: PDF de uma página com dados da formação e projetos do portfólio.
 - Contato: e-mail, LinkedIn, WhatsApp e GitHub.
 
 ## projetos do GitHub
@@ -16,6 +21,7 @@ Portfólio pessoal de Kaue Oliveira, com identidade roxa e efeitos sutis.
 Seleção estática baseada nos READMEs e nas linguagens dos repositórios públicos.
 O site não depende de requisições à API do GitHub para exibir os projetos.
 
+- [EEVEE](https://github.com/KaueSun/Eevee-assistant): assistente de voz para Windows com OpenAI, memória por perfil, biblioteca local e Google Agenda opcional.
 - [OliSnack API](https://github.com/KaueSun/OliSnack-API): API de pratos brasileiros com FastAPI e PostgreSQL.
 - [Viral Cuts Bot](https://github.com/KaueSun/Viral-bot): cortes de vídeo, transcrição, legendas e organização Kanban.
 - [Sistema de estoque](https://github.com/KaueSun/sistema-de-estoque): protótipo CRUD com simulação de cargos no front-end.
@@ -24,8 +30,11 @@ O site não depende de requisições à API do GitHub para exibir os projetos.
 - [Conselheiro Socrático](https://github.com/KaueSun/Api-gemini): aplicação de terminal com Node.js e Google Gemini.
 
 Os cards usam ilustrações abstratas; não representam capturas das interfaces.
-Os links levam ao código-fonte. Para atualizar a seleção, edite `.github-projects`
-em `index.html` e confira o README do respectivo projeto.
+A arte da EEVEE é feita em CSS. Não há screenshots ou vídeos de demonstração.
+Os detalhes foram conferidos nos READMEs públicos em 25/09/2026. As páginas
+separam capacidades atuais de possibilidades de evolução, sem prometer prazos.
+Para atualizar a seleção, edite `index.html` e a página correspondente em
+`projects/`, conferindo o README do respectivo projeto.
 
 ## tecnologias
 
@@ -40,12 +49,20 @@ em `index.html` e confira o README do respectivo projeto.
 portfolio/
 ├── index.html
 ├── README.md
+├── projects/
+│   ├── eevee/index.html
+│   ├── olisnack/index.html
+│   └── viral-cuts/index.html
+├── scripts/build_resume.py
 └── assets/
     ├── css/
-    │   └── main.css
+    │   ├── main.css
+    │   └── showcase.css
+    ├── docs/kaue-oliveira-curriculo.pdf
     ├── js/
     │   ├── main.js
-    │   └── effects.js
+    │   ├── effects.js
+    │   └── guide.js
     ├── images/
     │   └── profile.jpg
     └── icons/
@@ -54,9 +71,13 @@ portfolio/
 
 - `index.html`: conteúdo e estrutura do site.
 - `assets/css/main.css`: estilos e responsividade.
+- `assets/css/showcase.css`: destaque da EEVEE, estudos de caso, habilidades,
+  guia e refinamentos responsivos da apresentação.
 - `assets/js/main.js`: menu móvel, navegação ativa, controle de movimento e cópia de e-mail.
 - `assets/js/effects.js`: partículas, botões magnéticos e iluminação dos cards.
-- `assets/images/profile.jpg`: foto de perfil utilizada na apresentação e na prévia do projeto.
+- `assets/js/guide.js`: guia opcional com perguntas e respostas prontas, em um
+  diálogo nativo acessível. Não executa IA, não usa microfone e não envia dados.
+- `assets/images/profile.jpg`: foto original com tratamento de cor apenas em CSS.
 - `assets/icons/favicon.svg`: ícone do site.
 
 ## executar localmente
@@ -76,6 +97,28 @@ de transferência está disponível em um contexto seguro (HTTPS ou localhost).
 - Conteúdo e navegação disponíveis mesmo sem JavaScript.
 - Fontes locais de fallback caso o Google Fonts esteja indisponível.
 - Links diretos para o repositório deste portfólio, GitHub e contatos existentes.
+- No celular, o guia fica em uma bolha de 48 px para reduzir a cobertura de conteúdo.
+- Páginas próprias usam caminhos relativos e diretórios com `index.html`, sem
+  exigir roteador JavaScript ou regras especiais de reescrita.
+
+## currículo
+
+O botão `Baixar currículo` aponta para um PDF real em `assets/docs/`. Seu conteúdo
+usa apenas os dados já presentes no portfólio e nos projetos; instituição,
+previsão de formatura e experiência profissional não foram presumidas.
+
+Para atualizá-lo, edite `scripts/build_resume.py`, instale `reportlab` no ambiente
+Python de desenvolvimento e execute `python scripts/build_resume.py`. O site
+publicado continua estático e não precisa de Python. Confira a renderização do
+PDF após editar e mantenha formação e tecnologias sincronizadas com o site.
+
+## validação da atualização
+
+- Home e três páginas de projeto verificadas em 320, 360, 390, 620, 768, 1024 e
+  1440 px, sem rolagem horizontal.
+- Menu móvel, Escape, retorno de foco, guia, download do PDF e controle de efeitos.
+- Conteúdo e navegação também conferidos com JavaScript desativado.
+- PDF de uma página renderizado e inspecionado visualmente.
 
 ## referências do rework roxo
 
