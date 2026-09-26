@@ -79,6 +79,12 @@ portfolio/
   diálogo nativo acessível. Não executa IA, não usa microfone e não envia dados.
 - `assets/images/profile.jpg`: foto original com tratamento de cor apenas em CSS.
 - `assets/icons/favicon.svg`: ícone do site.
+- Ícones de interface e logos: [Bootstrap Icons v1.13.1](https://icons.getbootstrap.com/),
+  sob licença MIT preservada em `assets/icons/LICENSE-bootstrap-icons.txt`.
+  Os símbolos SVG ficam embutidos em cada página e funcionam sem CDN, fontes
+  de ícones ou JavaScript. Os textos dos links continuam acessíveis; os SVGs
+  decorativos usam `aria-hidden`. No celular, os links sociais formam duas colunas
+  com áreas de toque de pelo menos 46 px.
 
 ## executar localmente
 

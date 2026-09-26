@@ -1,4 +1,22 @@
 /* Software showcase: responsive content, case studies and portfolio guide. */
+.icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
+.icon { display: inline-block; width: 18px; height: 18px; flex: 0 0 auto; fill: currentColor; vertical-align: -.15em; }
+.button .icon { width: 19px; height: 19px; }
+.hero-socials .icon, .contact-socials .icon, .footer-links .icon { color: #c5b2de; }
+.hero-socials a, .contact-socials a, .footer-links a { gap: 9px; white-space: nowrap; }
+.contact-socials a, .footer-links a { font-size: 13px; }
+.repository-action { justify-content: flex-start; gap: 10px; }
+.repository-action .icon { color: var(--accent); }
+.repository-icon .icon { width: 27px; height: 27px; }
+.repository-cta { display: inline-flex; align-items: center; gap: 10px; }
+.scroll-indicator .icon { width: 14px; height: 14px; }
+.effects-icon, .guide-launch>span:first-child { display: inline-flex; align-items: center; }
+.guide-launch .icon { width: 22px; height: 22px; }
+.guide-close { display: grid; place-items: center; }
+.guide-answer a { gap: 10px; }
+.art-caption .icon { width: 12px; height: 12px; margin-inline: 3px; }
+.skill-evidence .icon { width: 14px; height: 14px; }
+.back-top { display: inline-flex; align-items: center; justify-content: center; }
 :where(h2, h3, article[id]) { scroll-margin-top: 115px; }
 .section { padding-block: 82px; }
 .hero { min-height: auto; }
@@ -155,7 +173,9 @@ body:has(.guide-dialog[open]) { overflow: hidden; }
   .hero-description { font-size: 15px; }
   .hero-actions { gap: 10px; }
   .hero-actions .button { flex: 1; padding-inline: 12px; white-space: nowrap; font-size: 12px; gap: 9px; }
-  .hero-socials { font-size: 12px; gap: 0 20px; }
+  .hero-socials { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); font-size: 13px; gap: 10px; margin-top: 18px; }
+  .hero-socials a { min-height: 46px; padding: 10px 13px; border: 1px solid #b48be123; border-radius: 10px; background: #b48be108; }
+  .hero-socials .icon { width: 18px; height: 18px; }
   .hero-bottom { flex-wrap: wrap; font-size: 10px; gap: 8px; }
   .effects-toggle { font-size: 10px; }
   .portrait-composition { max-width: 300px; }
@@ -204,6 +224,6 @@ body:has(.guide-dialog[open]) { overflow: hidden; }
   .container, .hero-content { width: calc(100% - 32px); }
   .hero-actions { flex-direction: column; }
   .hero-role { font-size: 21px; }
-  .hero-socials { gap: 0 15px; }
+  .hero-socials { gap: 10px; }
   .now-heading h2 { font-size: 30px; }
 }
