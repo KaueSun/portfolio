@@ -10,24 +10,24 @@ ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'assets' / 'docs' / 'kaue-oliveira-curriculo.pdf'
 DEST.parent.mkdir(parents=True, exist_ok=True)
 ink = colors.HexColor('#22202c')
-purple = colors.HexColor('#613599')
+green = colors.HexColor('#2D563F')
 styles = {
     'name': ParagraphStyle('name', fontName='Helvetica-Bold', fontSize=27, leading=32, textColor=ink, spaceAfter=6),
-    'role': ParagraphStyle('role', fontName='Helvetica', fontSize=11, leading=16, textColor=purple, spaceAfter=10),
+    'role': ParagraphStyle('role', fontName='Helvetica', fontSize=11, leading=16, textColor=green, spaceAfter=10),
     'body': ParagraphStyle('body', fontName='Helvetica', fontSize=10, leading=15, textColor=ink, spaceAfter=7),
     'small': ParagraphStyle('small', fontName='Helvetica', fontSize=9, leading=14, textColor=ink, spaceAfter=8),
-    'section': ParagraphStyle('section', fontName='Helvetica-Bold', fontSize=10, leading=15, textColor=purple, spaceBefore=14, spaceAfter=7),
+    'section': ParagraphStyle('section', fontName='Helvetica-Bold', fontSize=10, leading=15, textColor=green, spaceBefore=14, spaceAfter=7),
     'project': ParagraphStyle('project', fontName='Helvetica-Bold', fontSize=10, leading=15, textColor=ink, spaceBefore=4, spaceAfter=3),
 }
 content=[]
 def add(text, style='body'):
     content.append(Paragraph(text,styles[style]))
 def a(url,label):
-    return f'<a href="{url}" color="#613599">{label}</a>'
+    return f'<a href="{url}" color="#2D563F">{label}</a>'
 add('Kaue de Oliveira','name')
 add('Desenvolvedor de Software | Web, APIs e Inteligência Artificial','role')
 add(a('mailto:kauedeoliveira.dev@gmail.com','kauedeoliveira.dev@gmail.com')+' | '+a('https://github.com/KaueSun','github.com/KaueSun')+' | '+a('https://www.linkedin.com/in/kaue-oliveira-20b35b358','LinkedIn'),'small')
-content.append(HRFlowable(width='100%',thickness=1,color=colors.HexColor('#dcd2e7')))
+content.append(HRFlowable(width='100%',thickness=1,color=colors.HexColor('#cfdacf')))
 add('PERFIL E OBJETIVO','section')
 add('Estudante de Ciência da Computação com projetos em aplicações web, APIs, automação e inteligência artificial. Busco estágio em desenvolvimento de software para contribuir com soluções práticas e aprender em equipe.')
 add('FORMAÇÃO','section')

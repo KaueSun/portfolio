@@ -1,52 +1,39 @@
-# Portfólio de Kaue Oliveira
+# Portfólio de Kaue de Oliveira
 
-Portfólio estático em português com apresentação profissional, projetos, stack, trajetória e contato.
+Portfólio estático em português com projetos, stack, trajetória e contato.
 
 ## Direção visual
 
-Um observatório ao entardecer abre a página. A paisagem sugere distância e descoberta. A composição em painéis e os filetes de bronze reinterpretam a referência editorial da capa. Em cada estudo de caso, a mesma hierarquia conduz a leitura de problema, arquitetura e decisões.
+A abertura usa uma ilustração original de uma biblioteca com estantes de madeira, luz de leitura âmbar e um ponto azul de luz natural. A profundidade vem de três planos de iluminação. A moldura em bronze e a composição em formato de página dupla retomam a atmosfera da referência. O tom profissional vem da hierarquia da apresentação e do espaço dedicado às decisões técnicas nos estudos de caso.
 
 | Cor | Uso |
 | --- | --- |
-| Ameixa profunda `#18121F` | Fundo da página |
-| Violeta escuro `#211A2B` | Superfície dos cards e do guia |
-| Dourado envelhecido `#DBBA88` | Ação principal, links e categorias |
-| Bronze `#8E725A` | Contornos e divisórias |
-| Azul frio `#A7BFDC` | Tecnologias e foco por teclado |
-| Verde sálvia `#A9CBB6` | Disponibilidade e categoria de back-end |
-| Marfim `#F4EDF3` | Texto principal sobre superfícies escuras |
+| Verde floresta `#111C17` | Fundo e navegação |
+| Verde escuro `#202F26` | Superfície dos cards |
+| Vinho `#382424` e marrom `#271F19` | Painéis de vídeo e contato |
+| Bronze `#876B4E` e cobre `#BD875D` | Molduras, filetes e seção ativa |
+| Âmbar `#DFB77D` | Ações principais, links e ênfase em títulos |
+| Bege `#EFE5CE` e marfim `#F7ECD8` | Fundo da stack e texto sobre fundos escuros |
+| Azul suave `#A6C5D1` | Tecnologias, elemento de voz e foco por teclado |
 
-Spectral dá aos nomes e títulos o ritmo de uma página impressa. DM Sans facilita a leitura de descrições e controles. Georgia e Segoe UI oferecem alternativas locais.
+**Instrument Serif** dá ritmo editorial ao nome e aos títulos. **DM Sans** é usada na navegação, nos textos e nos controles. Georgia e Segoe UI são alternativas locais.
 
-## Organização da página
+## Organização
 
-1. Apresentação com paisagem original, currículo e acesso aos projetos.
-2. Três estudos de caso, com ilustrações que representam voz, dados e edição de vídeo. Os demais trabalhos ficam em uma lista expansível.
-3. Sobre mim, com retrato e formação.
-4. Stack, com links para exemplos de aplicação.
-5. Trajetória da graduação aos projetos autorais e ao objetivo profissional.
-6. Contato por e-mail e redes profissionais.
+1. Abertura com apresentação, projetos, currículo e disponibilidade.
+2. Sobre mim, com retrato e área de atuação.
+3. EEVEE em destaque e painéis para OliSnack API e Viral Cuts Bot. Seus estudos de caso detalham problema, arquitetura, decisões e limites. Os demais trabalhos ficam em uma lista expansível.
+4. Stack organizada por áreas, com links para exemplos de aplicação.
+5. Trajetória da graduação aos projetos autorais e ao próximo passo profissional.
+6. Contato por e-mail e redes.
 
-## Projetos do GitHub
+As artes nos cards são ilustrações de voz, consulta a uma API e edição de vídeo. O menu, a indicação de seção ativa, a expansão automática do arquivo e a cópia do endereço ficam em `assets/js/main.js`. O guia de projetos usa um diálogo nativo com respostas pré-escritas.
 
-Seleção estática baseada nos READMEs e nas linguagens dos repositórios públicos.
-O site não depende de requisições à API do GitHub para exibir os projetos.
-
-- [EEVEE](https://github.com/KaueSun/Eevee-assistant): assistente de voz para Windows com OpenAI, memória por perfil, biblioteca local e Google Agenda opcional.
-- [OliSnack API](https://github.com/KaueSun/OliSnack-API): API de pratos brasileiros com FastAPI e PostgreSQL.
-- [Viral Cuts Bot](https://github.com/KaueSun/Viral-bot): cortes de vídeo, transcrição, legendas e organização Kanban.
-- [Sistema de estoque](https://github.com/KaueSun/sistema-de-estoque): protótipo CRUD com simulação de cargos no front-end.
-- [NutriSearch](https://github.com/KaueSun/Sistema-de-Consulta-de-Calorias): consulta nutricional com a API USDA.
-- [Dashboard de comunicação](https://github.com/KaueSun/dashboard-comunicacao-interna): protótipo MVC com JSONPlaceholder.
-- [Conselheiro Socrático](https://github.com/KaueSun/Api-gemini): aplicação de terminal com Node.js e Google Gemini.
+No celular, o layout passa a uma coluna e a imagem usa um arquivo menor. A entrada da apresentação e as transições de botões e cards duram menos de um segundo. O site respeita a preferência de movimento reduzido e oferece um controle para pausar as animações.
 
 ## Execução
 
-Use `python -m http.server 8000` na raiz e abra `http://localhost:8000`. O site usa HTML, CSS e JavaScript e pode ser hospedado como arquivos estáticos.
-
-A folha `assets/css/main.css` contém os estilos compartilhados. O menu, a navegação ativa, o arquivo de projetos e a cópia do endereço ficam em `assets/js/main.js`. O guia opcional em `assets/js/guide.js` oferece respostas pré-escritas em um diálogo nativo.
-
-O layout adapta os três painéis a uma coluna e usa um recorte próprio da paisagem no celular. Botões e ilustrações têm transições curtas. A página respeita a preferência de movimento reduzido e oferece um controle para pausar as animações. A navegação, o arquivo expansível, o currículo e o link de e-mail também funcionam com JavaScript desativado.
+Abra `index.html` ou execute `python -m http.server 8000` na raiz e acesse `http://localhost:8000`. O site é servido como HTML, CSS, JavaScript, imagens e PDF. O botão de cópia de e-mail aparece quando o navegador disponibiliza a área de transferência em um contexto seguro.
 
 Os ícones Bootstrap Icons v1.13.1 usam a licença MIT em `assets/icons/LICENSE-bootstrap-icons.txt`.
 
