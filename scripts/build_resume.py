@@ -26,7 +26,7 @@ def a(url,label):
     return f'<a href="{url}" color="#613599">{label}</a>'
 add('Kaue de Oliveira','name')
 add('Desenvolvedor de Software | Web, APIs e Inteligência Artificial','role')
-add(a('mailto:kaueodev1@gmail.com','kaueodev1@gmail.com')+' | '+a('https://github.com/KaueSun','github.com/KaueSun')+' | '+a('https://www.linkedin.com/in/kaue-oliveira-20b35b358','LinkedIn'),'small')
+add(a('mailto:kauedeoliveira.dev@gmail.com','kauedeoliveira.dev@gmail.com')+' | '+a('https://github.com/KaueSun','github.com/KaueSun')+' | '+a('https://www.linkedin.com/in/kaue-oliveira-20b35b358','LinkedIn'),'small')
 content.append(HRFlowable(width='100%',thickness=1,color=colors.HexColor('#dcd2e7')))
 add('PERFIL E OBJETIVO','section')
 add('Estudante de Ciência da Computação com projetos em aplicações web, APIs, automação e inteligência artificial. Busco estágio em desenvolvimento de software para contribuir com soluções práticas e aprender em equipe.')
