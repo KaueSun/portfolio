@@ -1,44 +1,141 @@
-# Portfólio de Kaue de Oliveira
+# portfolio
 
-Portfólio estático em português com projetos, stack, trajetória e contato.
+Portfólio pessoal de Kaue Oliveira, com identidade roxa e efeitos sutis.
 
-## Direção visual
+## estrutura
 
-A abertura usa uma ilustração original de uma biblioteca com estantes de madeira, luz de leitura âmbar e um ponto azul de luz natural. A profundidade vem de três planos de iluminação. A moldura em bronze e a composição em formato de página dupla retomam a atmosfera da referência. O tom profissional vem da hierarquia da apresentação e do espaço dedicado às decisões técnicas nos estudos de caso.
+- Apresentação: nome, área de atuação, foto, redes e acesso aos projetos.
+- Sobre mim: objetivos profissionais e graduação em Ciência da Computação (4º período, cursando).
+- Projetos: EEVEE em destaque, seguida de OliSnack API e Viral Cuts Bot;
+  os demais projetos continuam disponíveis, com o portfólio ao final.
+- Estudos de caso: páginas estáticas dos três projetos principais, com problema,
+  solução, arquitetura, decisões, limites e possíveis evoluções.
+- Habilidades: frontend, backend, dados/infraestrutura, IA/automação, ferramentas
+  e fundamentos, com links para os projetos em que cada tecnologia é aplicada.
+- Agora: projeto em construção, temas de estudo e oportunidades buscadas.
+- Currículo: PDF de uma página com dados da formação e projetos do portfólio.
+- Contato: e-mail, LinkedIn, WhatsApp e GitHub.
 
-| Cor | Uso |
-| --- | --- |
-| Verde floresta `#111C17` | Fundo e navegação |
-| Verde escuro `#202F26` | Superfície dos cards |
-| Vinho `#382424` e marrom `#271F19` | Painéis de vídeo e contato |
-| Bronze `#876B4E` e cobre `#BD875D` | Molduras, filetes e seção ativa |
-| Âmbar `#DFB77D` | Ações principais, links e ênfase em títulos |
-| Bege `#EFE5CE` e marfim `#F7ECD8` | Fundo da stack e texto sobre fundos escuros |
-| Azul suave `#A6C5D1` | Tecnologias, elemento de voz e foco por teclado |
+## projetos do GitHub
 
-**Instrument Serif** dá ritmo editorial ao nome e aos títulos. **DM Sans** é usada na navegação, nos textos e nos controles. Georgia e Segoe UI são alternativas locais.
+Seleção estática baseada nos READMEs e nas linguagens dos repositórios públicos.
+O site não depende de requisições à API do GitHub para exibir os projetos.
 
-## Organização
+- [EEVEE](https://github.com/KaueSun/Eevee-assistant): assistente de voz para Windows com OpenAI, memória por perfil, biblioteca local e Google Agenda opcional.
+- [OliSnack API](https://github.com/KaueSun/OliSnack-API): API de pratos brasileiros com FastAPI e PostgreSQL.
+- [Viral Cuts Bot](https://github.com/KaueSun/Viral-bot): cortes de vídeo, transcrição, legendas e organização Kanban.
+- [Sistema de estoque](https://github.com/KaueSun/sistema-de-estoque): protótipo CRUD com simulação de cargos no front-end.
+- [NutriSearch](https://github.com/KaueSun/Sistema-de-Consulta-de-Calorias): consulta nutricional com a API USDA.
+- [Dashboard de comunicação](https://github.com/KaueSun/dashboard-comunicacao-interna): protótipo MVC com JSONPlaceholder.
+- [Conselheiro Socrático](https://github.com/KaueSun/Api-gemini): aplicação de terminal com Node.js e Google Gemini.
 
-1. Abertura com apresentação, projetos, currículo e disponibilidade.
-2. Sobre mim, com retrato e área de atuação.
-3. EEVEE em destaque e painéis para OliSnack API e Viral Cuts Bot. Seus estudos de caso detalham problema, arquitetura, decisões e limites. Os demais trabalhos ficam em uma lista expansível.
-4. Stack organizada por áreas, com links para exemplos de aplicação.
-5. Trajetória da graduação aos projetos autorais e ao próximo passo profissional.
-6. Contato por e-mail e redes.
+Os cards usam ilustrações abstratas; não representam capturas das interfaces.
+A arte da EEVEE é feita em CSS. Não há screenshots ou vídeos de demonstração.
+Os detalhes foram conferidos nos READMEs públicos em 25/09/2026. As páginas
+separam capacidades atuais de possibilidades de evolução, sem prometer prazos.
+Para atualizar a seleção, edite `index.html` e a página correspondente em
+`projects/`, conferindo o README do respectivo projeto.
 
-As artes nos cards são ilustrações de voz, consulta a uma API e edição de vídeo. O menu, a indicação de seção ativa, a expansão automática do arquivo e a cópia do endereço ficam em `assets/js/main.js`. O guia de projetos usa um diálogo nativo com respostas pré-escritas.
+## tecnologias
 
-No celular, o layout passa a uma coluna e a imagem usa um arquivo menor. A entrada da apresentação e as transições de botões e cards duram menos de um segundo. O site respeita a preferência de movimento reduzido e oferece um controle para pausar as animações.
+- HTML5
+- CSS3
+- JavaScript (sem dependências de runtime)
+- Google Fonts
 
-## Execução
+## arquivos
 
-Abra `index.html` ou execute `python -m http.server 8000` na raiz e acesse `http://localhost:8000`. O site é servido como HTML, CSS, JavaScript, imagens e PDF. O botão de cópia de e-mail aparece quando o navegador disponibiliza a área de transferência em um contexto seguro.
+```text
+portfolio/
+├── index.html
+├── README.md
+├── projects/
+│   ├── eevee/index.html
+│   ├── olisnack/index.html
+│   └── viral-cuts/index.html
+├── scripts/build_resume.py
+└── assets/
+    ├── css/
+    │   ├── main.css
+    │   └── showcase.css
+    ├── docs/kaue-oliveira-curriculo.pdf
+    ├── js/
+    │   ├── main.js
+    │   ├── effects.js
+    │   └── guide.js
+    ├── images/
+    │   └── profile.jpg
+    └── icons/
+        └── favicon.svg
+```
 
-Os ícones Bootstrap Icons v1.13.1 usam a licença MIT em `assets/icons/LICENSE-bootstrap-icons.txt`.
+- `index.html`: conteúdo e estrutura do site.
+- `assets/css/main.css`: estilos e responsividade.
+- `assets/css/showcase.css`: destaque da EEVEE, estudos de caso, habilidades,
+  guia e refinamentos responsivos da apresentação.
+- `assets/js/main.js`: menu móvel, navegação ativa, controle de movimento e cópia de e-mail.
+- `assets/js/effects.js`: partículas, botões magnéticos e iluminação dos cards.
+- `assets/js/guide.js`: guia opcional com perguntas e respostas prontas, em um
+  diálogo nativo acessível. Não executa IA, não usa microfone e não envia dados.
+- `assets/images/profile.jpg`: foto original com tratamento de cor apenas em CSS.
+- `assets/icons/favicon.svg`: ícone do site.
+- Ícones de interface e logos: [Bootstrap Icons v1.13.1](https://icons.getbootstrap.com/),
+  sob licença MIT preservada em `assets/icons/LICENSE-bootstrap-icons.txt`.
+  Os símbolos SVG ficam embutidos em cada página e funcionam sem CDN, fontes
+  de ícones ou JavaScript. Os textos dos links continuam acessíveis; os SVGs
+  decorativos usam `aria-hidden`. No celular, os links sociais formam duas colunas
+  com áreas de toque de pelo menos 46 px.
 
-## Currículo
+## executar localmente
 
-O PDF de uma página fica em `assets/docs/kaue-oliveira-curriculo.pdf`. Para gerar uma nova versão, atualize `scripts/build_resume.py` e execute `python scripts/build_resume.py` em um ambiente com ReportLab.
+Abra `index.html` no navegador ou use `python -m http.server 8000` e acesse
+`http://localhost:8000`. O botão de copiar e-mail aparece quando a API de área
+de transferência está disponível em um contexto seguro (HTTPS ou localhost).
 
-O endereço profissional é **kauedeoliveira.dev@gmail.com**.
+## interações e acessibilidade
+
+- Menu móvel com suporte a Escape, foco por teclado e indicação da seção atual.
+- Entradas ao rolar e inclinação sutil da foto, respeitando `prefers-reduced-motion`.
+- Controle para pausar e retomar efeitos; movimento reduzido do sistema tem prioridade.
+- Cena de partículas limitada a 30 fps, com resolução limitada a 1,5× e menos pontos no celular.
+- Animação suspensa quando a abertura sai da tela ou a aba fica oculta.
+- Fundo estático em CSS quando JavaScript ou Canvas não estão disponíveis.
+- Conteúdo e navegação disponíveis mesmo sem JavaScript.
+- Fontes locais de fallback caso o Google Fonts esteja indisponível.
+- Links diretos para o repositório deste portfólio, GitHub e contatos existentes.
+- No celular, o guia fica em uma bolha de 48 px para reduzir a cobertura de conteúdo.
+- Páginas próprias usam caminhos relativos e diretórios com `index.html`, sem
+  exigir roteador JavaScript ou regras especiais de reescrita.
+
+## currículo
+
+O botão `Baixar currículo` aponta para um PDF real em `assets/docs/`. Seu conteúdo
+usa apenas os dados já presentes no portfólio e nos projetos; instituição,
+previsão de formatura e experiência profissional não foram presumidas.
+
+Para atualizá-lo, edite `scripts/build_resume.py`, instale `reportlab` no ambiente
+Python de desenvolvimento e execute `python scripts/build_resume.py`. O site
+publicado continua estático e não precisa de Python. Confira a renderização do
+PDF após editar e mantenha formação e tecnologias sincronizadas com o site.
+
+## validação da atualização
+
+- Home e três páginas de projeto verificadas em 320, 360, 390, 620, 768, 1024 e
+  1440 px, sem rolagem horizontal.
+- Menu móvel, Escape, retorno de foco, guia, download do PDF e controle de efeitos.
+- Conteúdo e navegação também conferidos com JavaScript desativado.
+- PDF de uma página renderizado e inspecionado visualmente.
+
+## referências do rework roxo
+
+- [OriginKit — Blob Text Reveal](https://www.originkit.dev/components/blob-text-reveal): inspiração para entrada gradual de texto com desfoque.
+- [Skiper UI — Text roll navigation](https://skiper-ui.com/v1/skiper58): referência de interação e cuidado com a navegação.
+- [React Bits](https://reactbits.dev/get-started/index): referências de Spotlight Card, Magnet, Tilted Card e Particles.
+- [Three.js — exemplos](https://threejs.org/examples/): referência visual de partículas e composição em profundidade.
+
+As referências orientaram a direção visual; nenhum componente pago ou código de
+demo foi copiado. A implementação é própria, com CSS, Canvas 2D, projeção em
+perspectiva, IntersectionObserver e requestAnimationFrame. Não requer React ou
+Three.js para executar e mantém a estrutura estática original do projeto.
+
+link: portfolio-dem3.vercel.app

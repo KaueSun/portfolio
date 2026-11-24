@@ -9,7 +9,7 @@
   const link = (path) => new URL(path, root).href;
   const answers = [
     { question: 'Quais projetos usam Python?', text: 'EEVEE, OliSnack API e Viral Cuts Bot usam Python. Eles exploram, respectivamente, assistência por voz, APIs de nutrição e automação de vídeos.', label: 'Conhecer os projetos', path: 'index.html#projects' },
-    { question: 'Por onde começar a explorar?', text: 'A EEVEE é o projeto em destaque: uma assistente para Windows com voz ao vivo, memória por perfil e consulta a materiais de estudo. A página do projeto explica a arquitetura e as decisões.', label: 'Explorar a EEVEE', path: 'projects/eevee/index.html' },
+    { question: 'Por onde começar a explorar?', text: 'A EEVEE é o projeto em destaque: uma assistente para Windows com voz ao vivo, memória por perfil e consulta a materiais de estudo. A página do projeto explica a arquitetura e as decisões.', label: 'Explorar a EEVEE', path: 'projects/eevee/' },
     { question: 'O que o Kaue está estudando?', text: 'Kaue cursa Ciência da Computação e estuda IA aplicada, backend e estruturas de dados. Está aberto a estágios, projetos e colaboração.', label: 'Falar com o Kaue', path: 'index.html#contact' },
   ];
   const launch = document.createElement('button');
